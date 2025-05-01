@@ -46,6 +46,6 @@ License
 =
 This project is under the GPLv2 license. The Save processing module is adapted from [hactool](https://github.com/SciresM/hactool) code under ISC.
 
-Unofficial Repo
+Unofficial Repo, cloned from Dezem
 =
 This repository is just a clone of [shchmue](https://github.com/shchmue)'s DMCA'd Lockpick_RCM repository with keys updated from the [Atmosphere](<https://github.com/Atmosphere-NX/Atmosphere>) repository
