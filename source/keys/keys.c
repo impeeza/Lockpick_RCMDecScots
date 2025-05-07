@@ -572,7 +572,7 @@ static void _save_keys_to_sd(key_storage_t *keys, titlekey_buffer_t *titlekey_bu
         return;
     }
 
-    u32 text_buffer_size = MAX(_titlekey_count * sizeof(titlekey_text_buffer_t) + 1, SZ_16K);
+    u32 text_buffer_size = MAX(_titlekey_count * sizeof(titlekey_text_buffer_t) + 1, SZ_32K);
     char *text_buffer = (char *)calloc(1, text_buffer_size);
 
     SAVE_KEY(aes_kek_generation_source);
