@@ -95,7 +95,7 @@ bool emummc_set_path(char *path)
 			if (br == sizeof(sec64))
 				emu_cfg.sector = sec64;
 			else if (br == 4)
-				emu_cfg.sector = (u64)(*(u32*)&sec64);
+				emu_cfg.sector = (u64)(u32)sec64; // strict-aliasing fix
 			if (emu_cfg.sector)
 				found = true;
 		}
