@@ -90,7 +90,7 @@ void lv_anim_init(void);
 void lv_anim_create(lv_anim_t * anim_p);
 
 /**
- * Delete an animation for a variable with a given animatior function
+ * Delete an animation for a variable with a given animator function
  * @param var pointer to variable
  * @param fp a function pointer which is animating 'var',
  *           or NULL to ignore it and delete all animation with 'var

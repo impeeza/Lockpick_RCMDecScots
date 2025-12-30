@@ -154,7 +154,7 @@ const uint8_t * lv_font_get_bitmap_sparse(const lv_font_t * font, uint32_t unico
  * Generic glyph width get function used in 'font->get_width' when the font contains all characters in the range
  * @param font pointer to font
  * @param unicode_letter an unicode letter which width should be get
- * @return width of the gylph or -1 if not found
+ * @return width of the glyph or -1 if not found
  */
 int16_t lv_font_get_width_continuous(const lv_font_t * font, uint32_t unicode_letter);
 

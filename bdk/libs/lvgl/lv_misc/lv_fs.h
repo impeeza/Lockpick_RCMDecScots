@@ -113,7 +113,7 @@ void lv_fs_init(void);
 void lv_fs_add_drv(lv_fs_drv_t * drv_p);
 
 /**
- * Test if a drive is rady or not. If the `ready` function was not initialized `true` will be returned.
+ * Test if a drive is ready or not. If the `ready` function was not initialized `true` will be returned.
  * @param letter letter of the drive
  * @return true: drive is ready; false: drive is not ready
  */

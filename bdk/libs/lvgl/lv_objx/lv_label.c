@@ -312,7 +312,7 @@ void lv_label_set_recolor(lv_obj_t * label, bool en)
 
     ext->recolor = en == false ? 0 : 1;
 
-    lv_label_refr_text(label);  /*Refresh the text because the potential colo codes in text needs to be hided or revealed*/
+    lv_label_refr_text(label);  /*Refresh the text because the potential colo codes in text needs to be hidden or revealed*/
 }
 
 /**
@@ -697,7 +697,7 @@ static bool lv_label_design(lv_obj_t * label, const lv_area_t * mask, lv_design_
         if(ext->align == LV_LABEL_ALIGN_RIGHT) flag |= LV_TXT_FLAG_RIGHT;
 
         /* In ROLL mode the CENTER and RIGHT are pointless so remove them.
-         * (In addition they will result mis-alignment is this case)*/
+         * (In addition they will result misalignment is this case)*/
         if((ext->long_mode == LV_LABEL_LONG_ROLL) &&
                 (ext->align == LV_LABEL_ALIGN_CENTER || ext->align == LV_LABEL_ALIGN_RIGHT)) {
             lv_point_t size;

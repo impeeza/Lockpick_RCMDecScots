@@ -200,7 +200,7 @@ void lv_spinbox_set_range(lv_obj_t * spinbox, int32_t range_min, int32_t range_m
 }
 
 /**
- * Set spinbox callback on calue change
+ * Set spinbox callback on value change
  * @param spinbox pointer to spinbox
  * @param cb Callback function called on value change event
  */
@@ -414,7 +414,7 @@ static void lv_spinbox_updatevalue(lv_obj_t * spinbox)
     }
 
     char digits[64];
-    /*Convert the numbers to string (the sign is already handled so always covert positive number)*/
+    /*Convert the numbers to string (the sign is already handled so always convert positive number)*/
     lv_math_num_to_str(ext->value < 0 ? -ext->value : ext->value, digits);
 
     /*Add leading zeros*/
@@ -461,7 +461,7 @@ static void lv_spinbox_updatevalue(lv_obj_t * spinbox)
         cur_pos--;
     }
 
-    if(cur_pos > intDigits ) cur_pos ++;   /*Skip teh decimal point*/
+    if(cur_pos > intDigits ) cur_pos ++;   /*Skip the decimal point*/
 
     cur_pos += ext->digit_padding_left;
 

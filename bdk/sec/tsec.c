@@ -55,7 +55,7 @@ static int _tsec_dma_pa_to_internal_100(int not_imem, int i_offset, int pa_offse
 	if (not_imem)
 		cmd = TSEC_DMATRFCMD_SIZE_256B; // DMA 256 bytes
 	else
-		cmd = TSEC_DMATRFCMD_IMEM;      // DMA IMEM (Instruction memmory)
+		cmd = TSEC_DMATRFCMD_IMEM;      // DMA IMEM (Instruction memory)
 
 	TSEC(TSEC_DMATRFMOFFS) = i_offset;
 	TSEC(TSEC_DMATRFFBOFFS) = pa_offset;

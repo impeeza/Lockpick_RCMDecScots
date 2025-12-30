@@ -241,7 +241,7 @@ static void lv_draw_rect_main_corner(const lv_area_t * coords, const lv_area_t *
 
     while(lv_circ_cont(&cir)) {
 #if LV_ANTIALIAS != 0
-        /*New step in y on the outter circle*/
+        /*New step in y on the outer circle*/
         if(out_x_last != cir.x) {
             out_y_seg_end = cir.y;
             lv_coord_t seg_size = out_y_seg_end - out_y_seg_start;
@@ -736,7 +736,7 @@ static void lv_draw_rect_border_corner(const lv_area_t * coords, const lv_area_t
         }
 
 #if LV_ANTIALIAS != 0
-        /*New step in y on the outter circle*/
+        /*New step in y on the outer circle*/
         if(out_x_last != cir_out.x) {
             out_y_seg_end = cir_out.y;
             lv_coord_t seg_size = out_y_seg_end - out_y_seg_start;
@@ -1172,7 +1172,7 @@ static void lv_draw_shadow_full(const lv_area_t * coords, const lv_area_t * mask
 
                 /*Add the value of the 1D blur on 'col_rel' position*/
                 if(col_rel < -swidth) {                         /*Outside of the blurred area. */
-                    if(line_rel == -swidth) line_ready = true;  /*If no data even on the very first line then it wont't be anything else in this line*/
+                    if(line_rel == -swidth) line_ready = true;  /*If no data even on the very first line then it won't be anything else in this line*/
                     break;                                      /*Break anyway because only smaller 'col_rel' values will come */
                 } else if(col_rel > swidth) px_opa_sum += line_1d_blur[0];      /*Inside the not blurred area*/
                 else px_opa_sum += line_1d_blur[swidth - col_rel];              /*On the 1D blur (+ swidth to align to the center)*/
@@ -1414,7 +1414,7 @@ static uint16_t lv_draw_cont_radius_corr(uint16_t r, lv_coord_t w, lv_coord_t h)
  * Used  the first segment of a circle which is the longest and have the most non-linearity (cos)
  * @param seg length of the line segment
  * @param px_id index of pixel on the line segment
- * @param line_opa opacity of the lien (it will be the max opacity)
+ * @param line_opa opacity of the line (it will be the max opacity)
  * @return the desired opacity of the pixel
  */
 static lv_opa_t antialias_get_opa_circ(lv_coord_t seg, lv_coord_t px_id, lv_opa_t opa)

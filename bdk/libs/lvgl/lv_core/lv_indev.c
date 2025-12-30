@@ -602,7 +602,7 @@ static void indev_proc_press(lv_indev_proc_t * proc)
         pr_obj = indev_search_obj(proc, lv_layer_top());
         if(pr_obj == NULL) pr_obj = indev_search_obj(proc, lv_scr_act());
     }
-    /*If a dragable or a protected object was the last then keep it*/
+    /*If a draggable or a protected object was the last then keep it*/
     else {
 
     }

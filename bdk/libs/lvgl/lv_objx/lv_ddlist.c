@@ -695,7 +695,7 @@ static lv_res_t lv_ddlist_signal(lv_obj_t * ddlist, lv_signal_t sign, void * par
             /*Open the list if closed*/
             if(!ext->opened) {
                 ext->opened = true;
-                ext->sel_opt_id_ori = ext->sel_opt_id;      /*Save the current value. Used to revert this state if ENER wont't be pressed*/
+                ext->sel_opt_id_ori = ext->sel_opt_id;      /*Save the current value. Used to revert this state if ENER won't be pressed*/
                 lv_ddlist_refr_size(ddlist, true);
             }
         }

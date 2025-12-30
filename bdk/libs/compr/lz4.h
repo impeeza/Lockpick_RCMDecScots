@@ -103,7 +103,7 @@ extern "C" {
 #define LZ4_VERSION_STRING LZ4_EXPAND_AND_QUOTE(LZ4_LIB_VERSION)
 
 LZ4LIB_API int LZ4_versionNumber (void);  /**< library version number; useful to check dll version */
-LZ4LIB_API const char* LZ4_versionString (void);   /**< library version string; unseful to check dll version */
+LZ4LIB_API const char* LZ4_versionString (void);   /**< library version string; useful to check dll version */
 
 
 /*-************************************
@@ -246,7 +246,7 @@ LZ4LIB_API LZ4_stream_t* LZ4_createStream(void);
 LZ4LIB_API int           LZ4_freeStream (LZ4_stream_t* streamPtr);
 
 /*! LZ4_resetStream() :
- *  An LZ4_stream_t structure can be allocated once and re-used multiple times.
+ *  An LZ4_stream_t structure can be allocated once and reused multiple times.
  *  Use this function to start compressing a new stream.
  */
 LZ4LIB_API void LZ4_resetStream (LZ4_stream_t* streamPtr);
@@ -295,14 +295,14 @@ typedef union LZ4_streamDecode_u LZ4_streamDecode_t;   /* incomplete type (defin
 
 /*! LZ4_createStreamDecode() and LZ4_freeStreamDecode() :
  *  creation / destruction of streaming decompression tracking structure.
- *  A tracking structure can be re-used multiple times sequentially. */
+ *  A tracking structure can be reused multiple times sequentially. */
 LZ4LIB_API LZ4_streamDecode_t* LZ4_createStreamDecode(void);
 LZ4LIB_API int                 LZ4_freeStreamDecode (LZ4_streamDecode_t* LZ4_stream);
 
 /*! LZ4_setStreamDecode() :
- *  An LZ4_streamDecode_t structure can be allocated once and re-used multiple times.
+ *  An LZ4_streamDecode_t structure can be allocated once and reused multiple times.
  *  Use this function to start decompression of a new stream of blocks.
- *  A dictionary can optionnally be set. Use NULL or size 0 for a reset order.
+ *  A dictionary can optionally be set. Use NULL or size 0 for a reset order.
  * @return : 1 if OK, 0 if error
  */
 LZ4LIB_API int LZ4_setStreamDecode (LZ4_streamDecode_t* LZ4_streamDecode, const char* dictionary, int dictSize);

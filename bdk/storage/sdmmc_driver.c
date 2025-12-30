@@ -306,7 +306,7 @@ static void _sdmmc_reset_all(sdmmc_t *sdmmc)
 
 int sdmmc_setup_clock(sdmmc_t *sdmmc, u32 type)
 {
-	// Disable the SD clock if it was enabled, and reenable it later.
+	// Disable the SD clock if it was enabled, and re-enable it later.
 	bool should_enable_sd_clock = false;
 	if (sdmmc->regs->clkcon & SDHCI_CLOCK_CARD_EN)
 	{

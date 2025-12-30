@@ -60,7 +60,7 @@ typedef struct
 
 
 /**
- * Initiaize the dyn_mem module (work memory and other variables)
+ * Initialize the dyn_mem module (work memory and other variables)
  */
 void lv_mem_init(void);
 

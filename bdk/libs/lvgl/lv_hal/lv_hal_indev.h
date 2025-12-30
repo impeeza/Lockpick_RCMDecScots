@@ -34,7 +34,7 @@ enum {
     LV_INDEV_TYPE_NONE,        /*Show uninitialized state*/
     LV_INDEV_TYPE_POINTER,     /*Touch pad, mouse, external button*/
     LV_INDEV_TYPE_KEYPAD,      /*Keypad or keyboard*/
-    LV_INDEV_TYPE_BUTTON,      /*External (hardware button) which is assinged to a specific point of the screen*/
+    LV_INDEV_TYPE_BUTTON,      /*External (hardware button) which is assigned to a specific point of the screen*/
     LV_INDEV_TYPE_ENCODER,     /*Encoder with only Left, Right turn and a Button*/
 };
 typedef uint8_t lv_hal_indev_type_t;

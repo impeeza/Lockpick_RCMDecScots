@@ -371,7 +371,7 @@ static void anim_task(void * param)
         anim_list_changed = false;
 
         if(!a->has_run) {
-            a->has_run = 1;         /*The list readying might be reseted so need to know which anim has run already*/
+            a->has_run = 1;         /*The list readying might be reset so need to know which anim has run already*/
             a->act_time += elaps;
             if(a->act_time >= 0) {
                 if(a->act_time > a->time) a->act_time = a->time;

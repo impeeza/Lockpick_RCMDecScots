@@ -63,7 +63,7 @@ void lv_draw_label(const lv_area_t * coords, const lv_area_t * mask, const lv_st
         /*Normally use the label's width as width*/
         w = lv_area_get_width(coords);
     } else {
-        /*If EXAPND is enabled then not limit the text's width to the object's width*/
+        /*If EXPAND is enabled then not limit the text's width to the object's width*/
         lv_point_t p;
         lv_txt_get_size(&p, txt, style->text.font, style->text.letter_space, style->text.line_space, LV_COORD_MAX, flag);
         w = p.x;

@@ -285,7 +285,7 @@ reinit_try:
 			retries = 3;
 			first_reinit = false;
 
-			// If succesful reinit, restart xfer.
+			// If successful reinit, restart xfer.
 			if (res)
 			{
 				bbuf = (u8 *)buf;

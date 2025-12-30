@@ -36,7 +36,7 @@
  *      DEFINES
  *********************/
 #define LV_PAGE_SB_MIN_SIZE             (LV_DPI / 8)
-#define LV_PAGE_SCROLL_ANIM_TIME        200           /*[ms] Scroll anim time on `lv_page_scroll_up/down/left/rigth`*/
+#define LV_PAGE_SCROLL_ANIM_TIME        200           /*[ms] Scroll anim time on `lv_page_scroll_up/down/left/right`*/
 #define LV_PAGE_END_FLASH_SIZE          (LV_DPI / 4)
 #define LV_PAGE_END_ANIM_TIME           300
 #define LV_PAGE_END_ANIM_WAIT_TIME      300
@@ -488,7 +488,7 @@ void lv_page_focus(lv_obj_t * page, const lv_obj_t * obj, uint16_t anim_time)
     anim_time = 0;
 #else
     /* Be sure there is no position changing animation in progress
-     * because it can overide the current changes*/
+     * because it can override the current changes*/
     lv_anim_del(page, (lv_anim_fp_t)lv_obj_set_y);
     lv_anim_del(page, (lv_anim_fp_t)lv_obj_set_pos);
     lv_anim_del(ext->scrl, (lv_anim_fp_t)lv_obj_set_y);

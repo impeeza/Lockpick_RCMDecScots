@@ -438,7 +438,7 @@ LZ4_FORCE_INLINE void LZ4_prepareTable(
             cctx->currentOffset = 0;
             cctx->tableType = clearedTable;
         } else {
-            DEBUGLOG(4, "LZ4_prepareTable: Re-use hash table (no reset)");
+            DEBUGLOG(4, "LZ4_prepareTable: Reuse hash table (no reset)");
         }
     }
 
@@ -633,7 +633,7 @@ LZ4_FORCE_INLINE int LZ4_compress_generic(
 _next_match:
         /* at this stage, the following variables must be correctly set :
          * - ip : at start of LZ operation
-         * - match : at start of previous pattern occurence; can be within current prefix, or within extDict
+         * - match : at start of previous pattern occurrence; can be within current prefix, or within extDict
          * - offset : if maybe_ext_memSegment==1 (constant)
          * - lowLimit : must be == dictionary to mean "match is within extDict"; must be == source otherwise
          * - token and *token : position to write 4-bits for match length; higher 4-bits for literal length supposed already written
