@@ -45,7 +45,7 @@ typedef struct
 } lv_ufs_ent_t;
 
 /*File descriptor, used to handle opening an entry more times simultaneously
- Contains unique informations about the specific opening*/
+ Contains unique information about the specific opening*/
 typedef struct
 {
     lv_ufs_ent_t* ent; /*Pointer to the entry*/

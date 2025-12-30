@@ -219,7 +219,7 @@ static void _max17050_write_config_regs()
 
 /*
  * Block write all the override values coming from platform data.
- * This function MUST be called before the POR initialization proceedure
+ * This function MUST be called before the POR initialization procedure
  * specified by maxim.
  */
 static void _max17050_override_por_values()
@@ -254,13 +254,13 @@ int max17050_fix_configuration()
 	 */
 	msleep(500);
 
-	/* Initialize configaration */
+	/* Initialize configuration */
 	_max17050_write_config_regs();
 
 	/* update capacity params */
 	_max17050_update_capacity_regs();
 
-	/* delay must be atleast 350mS to allow VFSOC
+	/* delay must be at least 350mS to allow VFSOC
 	 * to be calculated from the new configuration
 	 */
 	msleep(350);

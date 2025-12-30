@@ -573,7 +573,7 @@ static int _usbd_initialize_ep0()
 // 	if (TIMER_WDT4_STATUS & 1)// active
 // 	{
 // 		TIMER_TMR0_TMR_PTV &= 0x7FFFFFFF; // Disable timer
-// 		TIMER_WDT4_UNLOCK_PATTERN = 0xC45A; // Alow writes to disable counter bit.
+// 		TIMER_WDT4_UNLOCK_PATTERN = 0xC45A; // Allow writes to disable counter bit.
 // 		TIMER_WDT4_COMMAND |= 2; // Disable counter
 // 		TIMER_TMR0_TMR_PCR |= 0x40000000;// INTR_CLR
 // 	}

@@ -195,7 +195,7 @@ _irq_handler:
 	MSR SPSR_cxsf, R0                   /* Copy it into SPSR_IRQ */
 
 	LDMFD SP, {R0-R3, R12, LR}^ /* Unstack all saved USER/SYSTEM registers */
-	NOP                         /* Cant access barked registers immediately */
+	NOP                         /* Can't access barked registers immediately */
 	LDR LR, [SP, #24]           /* Load return address from the SYS stack */
 	MOVS PC, LR                 /* Return restoring CPSR from SPSR */
 

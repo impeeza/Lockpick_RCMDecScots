@@ -380,7 +380,7 @@ static lv_res_t lv_roller_signal(lv_obj_t * roller, lv_signal_t sign, void * par
                 ext->ddlist.sel_opt_id_ori = ext->ddlist.sel_opt_id;
             }
         } else {
-            ext->ddlist.sel_opt_id_ori = ext->ddlist.sel_opt_id;      /*Save the current value. Used to revert this state if ENER wont't be pressed*/
+            ext->ddlist.sel_opt_id_ori = ext->ddlist.sel_opt_id;      /*Save the current value. Used to revert this state if ENER won't be pressed*/
 
         }
 #endif
@@ -426,7 +426,7 @@ static lv_res_t lv_roller_signal(lv_obj_t * roller, lv_signal_t sign, void * par
 
 /**
  * Signal function of the scrollable part of the roller.
- * @param roller_scrl ointer to the scrollable part of roller (page)
+ * @param roller_scrl pointer to the scrollable part of roller (page)
  * @param sign a signal type from lv_signal_t enum
  * @param param pointer to a signal specific variable
  * @return LV_RES_OK: the object is not deleted in the function; LV_RES_INV: the object is deleted

@@ -723,7 +723,7 @@ break_nosleep:
 	// Enable EMC pipe clock gating.
 	EMC(EMC_CFG_PIPE_CLK) = params->emc_cfg_pipe_clk;
 
-	// Depending on freqency, enable CMD/CLK fdpd.
+	// Depending on frequency, enable CMD/CLK fdpd.
 	EMC(EMC_FDPD_CTRL_CMD_NO_RAMP) = params->emc_fdpd_ctrl_cmd_no_ramp;
 
 	// Enable arbiter.
@@ -1356,7 +1356,7 @@ static void _sdram_config_t210b01(const sdram_params_t210b01_t *params)
 	// Enable EMC pipe clock gating.
 	EMC(EMC_CFG_PIPE_CLK) = params->emc_cfg_pipe_clk;
 
-	// Depending on freqency, enable CMD/CLK fdpd.
+	// Depending on frequency, enable CMD/CLK fdpd.
 	EMC(EMC_FDPD_CTRL_CMD_NO_RAMP) = params->emc_fdpd_ctrl_cmd_no_ramp;
 
 	// Set untranslated region requirements.

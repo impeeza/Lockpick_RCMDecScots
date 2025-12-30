@@ -241,7 +241,7 @@ void clock_enable_kfuse()
 	usleep(10); // Wait 10s to prevent glitching.
 
 	CLOCK(CLK_RST_CONTROLLER_RST_DEV_H_CLR) = BIT(CLK_H_KFUSE);
-	usleep(20); // Wait 20s fo kfuse hw to init.
+	usleep(20); // Wait 20s for kfuse hw to init.
 }
 
 void clock_disable_kfuse()

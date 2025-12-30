@@ -1073,7 +1073,7 @@ void lv_obj_set_top(lv_obj_t * obj, bool en)
 /**
  * Enable the dragging of an object
  * @param obj pointer to an object
- * @param en true: make the object dragable
+ * @param en true: make the object draggable
  */
 void lv_obj_set_drag(lv_obj_t * obj, bool en)
 {
@@ -1212,7 +1212,7 @@ void lv_obj_set_free_num(lv_obj_t * obj, LV_OBJ_FREE_NUM_TYPE free_num)
  * Set an application specific  pointer for an object.
  * It can help to identify objects in the application.
  * @param obj pointer to an object
- * @param free_p the new free pinter
+ * @param free_p the new free pointer
  */
 void lv_obj_set_free_ptr(lv_obj_t * obj, void * free_p)
 {
@@ -1587,7 +1587,7 @@ bool lv_obj_get_click(const lv_obj_t * obj)
 /**
  * Get the top enable attribute of an object
  * @param obj pointer to an object
- * @return true: the auto top feture is enabled
+ * @return true: the auto top feature is enabled
  */
 bool lv_obj_get_top(const lv_obj_t * obj)
 {
@@ -1597,7 +1597,7 @@ bool lv_obj_get_top(const lv_obj_t * obj)
 /**
  * Get the drag enable attribute of an object
  * @param obj pointer to an object
- * @return true: the object is dragable
+ * @return true: the object is draggable
  */
 bool lv_obj_get_drag(const lv_obj_t * obj)
 {

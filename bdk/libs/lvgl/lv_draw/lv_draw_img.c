@@ -234,7 +234,7 @@ bool lv_img_color_format_has_alpha(lv_img_cf_t cf)
  *  - pointer to an 'lv_img_t' variable (image stored internally and compiled into the code)
  *  - a path to a file (e.g. "S:/folder/image.bin")
  *  - or a symbol (e.g. SYMBOL_CLOSE)
- * @return type of the image source LV_IMG_SRC_VARIABLE/FILE/SYMBOL/UNKOWN
+ * @return type of the image source LV_IMG_SRC_VARIABLE/FILE/SYMBOL/UNKNOWN
  */
 lv_img_src_t lv_img_src_get_type(const void * src)
 {

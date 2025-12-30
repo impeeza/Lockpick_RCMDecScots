@@ -207,7 +207,7 @@ static inline lv_btn_state_t lv_imgbtn_get_state(const lv_obj_t * imgbtn)
 /**
  * Get the toggle enable attribute of the image button
  * @param imgbtn pointer to a image button object
- * @return ture: toggle enabled, false: disabled
+ * @return true: toggle enabled, false: disabled
  */
 static inline bool lv_imgbtn_get_toggle(const lv_obj_t * imgbtn)
 {

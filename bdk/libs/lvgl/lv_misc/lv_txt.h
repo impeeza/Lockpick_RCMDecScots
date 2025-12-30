@@ -57,7 +57,7 @@ typedef uint8_t lv_txt_cmd_state_t;
  * Get size of a text
  * @param size_res pointer to a 'point_t' variable to store the result
  * @param text pointer to a text
- * @param font pinter to font of the text
+ * @param font pointer to font of the text
  * @param letter_space letter space of the text
  * @param line_space line space of the text
  * @param flags settings for the text from 'txt_flag_t' enum
@@ -92,7 +92,7 @@ lv_coord_t lv_txt_get_width(const char * txt, uint16_t length,
 
 
 /**
- * Check next character in a string and decide if te character is part of the command or not
+ * Check next character in a string and decide if the character is part of the command or not
  * @param state pointer to a txt_cmd_state_t variable which stores the current state of command processing
  * @param c the current character
  * @return true: the character is part of a command and should not be written,
@@ -117,7 +117,7 @@ void lv_txt_ins(char * txt_buf, uint32_t pos, const char * ins_txt);
 void lv_txt_cut(char * txt, uint32_t pos, uint32_t len);
 
 /***************************************************************
- *  GLOBAL FUNCTION POINTERS FOR CAHRACTER ENCODING INTERFACE
+ *  GLOBAL FUNCTION POINTERS FOR CHARACTER ENCODING INTERFACE
  ***************************************************************/
 
 /**
