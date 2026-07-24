@@ -69,7 +69,6 @@ PartialAesKeyCrack.exe 11111111111111111111111111111111 222222222222222222222222
 ## 🙌 Massive Thanks to CTCaer !
 
 This project owes a lot to [Hekate](https://github.com/CTCaer/hekate), and special thanks go to **CTCaer** for his valuable advice, expertise, and humor throughout the development process. 🎉
-Also thanks so much to Zhoria, the help provided has been invaluable.
 
 ## 📜 License
 

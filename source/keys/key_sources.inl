@@ -14,6 +14,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+// Universal falcon hardware-secret embedded in TSEC firmware v26. Not device-specific.
+static const u8 hovi_kek[SE_KEY_128_SIZE] __attribute__((aligned(4))) = {
+    0xEB, 0xC4, 0x76, 0xA4, 0xFE, 0xA4, 0x29, 0x3B, 0x8E, 0x46, 0x6B, 0x1F, 0xFC, 0x00, 0x1F, 0xC6 };
+
 /* Search "EristaMasterKekSource" in "Atmosphere/fusee/program/source/fusee_key_derivation.cpp" file in Atmosphere project, only last firmware key in the file. */
 /* master_kek_sources Erista Master Kek Source. (EristaMasterKekSource) */
 static const u8 master_kek_sources[KB_FIRMWARE_VERSION_MAX - KB_FIRMWARE_VERSION_620 + 1][0x10] __attribute__((aligned(4))) = {
@@ -109,6 +113,7 @@ static const u8 mariko_key_vectors[][0x10] __attribute__((aligned(4))) = {
 
 static const u8 package2_key_source[0x10] __attribute__((aligned(4))) = {
     0xFB, 0x8B, 0x6A, 0x9C, 0x79, 0x00, 0xC8, 0x49, 0xEF, 0xD2, 0x4D, 0x85, 0x4D, 0x30, 0xA0, 0xC7};
+
 static const u8 titlekek_source[0x10] __attribute__((aligned(4))) = {
     0x1E, 0xDC, 0x7B, 0x3B, 0x60, 0xE6, 0xB4, 0xD8, 0x78, 0xB8, 0x17, 0x15, 0x98, 0x5E, 0x62, 0x9B};
 
