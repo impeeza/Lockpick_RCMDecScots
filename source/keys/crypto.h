@@ -137,15 +137,17 @@ static const u8 secure_data_tweaks[1][0x10] __attribute__((aligned(4))) = {
 #define TSEC_ROOT_KEY_VERSION 2
 
 // Lockpick_RCM keyslots
-#define KS_BIS_00_CRYPT 0
-#define KS_BIS_00_TWEAK 1
-#define KS_BIS_01_CRYPT 2
-#define KS_BIS_01_TWEAK 3
-#define KS_BIS_02_CRYPT 4
-#define KS_BIS_02_TWEAK 5
-#define KS_AES_CTR  6
-#define KS_AES_ECB  8
-#define KS_AES_CMAC 10
+#define KS_BIS_00_CRYPT  0
+#define KS_BIS_00_TWEAK  1
+#define KS_BIS_01_CRYPT  2
+#define KS_BIS_01_TWEAK  3
+#define KS_BIS_02_CRYPT  4
+#define KS_BIS_02_TWEAK  5
+#define KS_AES_CTR       6
+#define KS_NCA_HDR_CRYPT 7  // temporary: NCA header XTS data key
+#define KS_AES_ECB       8
+#define KS_NCA_HDR_TWEAK 9  // temporary: NCA header XTS tweak key
+#define KS_AES_CMAC      10
 
 // Mariko keyslots
 #define KS_MARIKO_KEK 12
