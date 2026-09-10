@@ -31,10 +31,10 @@ jobs:
           git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git fetch --tags
 
-          last_tag=$(git tag --list "1.9.*" --sort=-v:refname | head -n1)
+          last_tag=$(git tag --list "2.0.*" --sort=-v:refname | head -n1)
 
           if [ -z "$last_tag" ]; then
-            version="1.9.15"
+            version="2.0.2"
           else
             major=$(echo "$last_tag" | cut -d. -f1)
             minor=$(echo "$last_tag" | cut -d. -f2)
